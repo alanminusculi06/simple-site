@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+    <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+        <div class="subheading mb-3">Linguagens de programação &amp; Ferramentas</div>
+        <ul class="list-inline dev-icons">
+            {% for skill in skills %}
+            <li class="list-inline-item">
+                <i class="fab {{ skill.icon }}"></i>
+            </li>
+            {% endfor %}            
+        </ul>
+    </div>
+</section>
+{% endblock %}
